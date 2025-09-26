@@ -117,7 +117,7 @@ public class Gestion {
             return;
         }
 
-        if (buscarAlumno(codigoCurso)==null) {
+        if (buscarAlumno(codigoAlumno)==null) {
             System.out.println("El alumno no existe");
             return;
         }

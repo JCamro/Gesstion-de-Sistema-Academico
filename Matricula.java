@@ -10,19 +10,15 @@ public class Matricula {
         this.alumno=alumno;
         this.curso=curso;
     }
-
     public Alumno getAlumno() {
         return alumno;
     }
-
     public Cursos getCurso() {
         return curso;
     }
-
     public void agregarNota(double nota) {
         notas.add(nota);
     }
-
     public double calcularPromedio(){
         if (notas.isEmpty()) {
             promedio=0;

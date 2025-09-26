@@ -36,5 +36,4 @@ public class Alumno {
     public void agregarCurso(Cursos curso) {
         cursosQueLleva.add(curso);
     }
-
 }

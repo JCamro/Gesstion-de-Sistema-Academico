@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-
 public class Cursos {
     private int codigo;
     private String nombre;
@@ -11,7 +10,6 @@ public class Cursos {
         this.nombre=nombre;
         this.docente=docente;
     } 
-
 
     //GETS
     public int getCodigo() {
@@ -29,7 +27,7 @@ public class Cursos {
         Matricula matricula = new Matricula(alumno, this);
         matriculas.add(matricula);
     }
-
+    //Busca la matrícula de un alumno por su código
     public Matricula buscarMatricula(int codigoAlumno) {
         for (Matricula matricula : matriculas) {
             if (matricula.getAlumno().getCodigo() == codigoAlumno) {
@@ -38,7 +36,6 @@ public class Cursos {
         }
         return null; // Retorna null si no se encuentra la matrícula
     }
-
     public ArrayList<Matricula> getRegistroNotas() {
         return matriculas;
     }
